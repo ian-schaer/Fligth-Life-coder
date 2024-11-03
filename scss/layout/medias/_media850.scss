@@ -60,7 +60,7 @@
     }
 
     .text-mapa {
-        height: auto;
+        width: auto;
         font-size: 1rem;
     }
 
@@ -76,5 +76,9 @@
 
     .mapa-center {
         padding-left: 4.375rem;
+    }
+
+    .container {
+        margin-bottom: 100px;
     }
 }

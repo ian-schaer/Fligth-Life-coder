@@ -58,28 +58,32 @@
     </section>
     <section class="container-products">
         <section class="curso-formulario">
-            <form action="" class="curso-formulario1">
+            <form class="formulario">
                 <fieldset>
-                    <legend>datos personales</legend>
-                    <label for="nombre">nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="ingresa tu nombre" required>
-                    <label for="apellido">apellido:</label>
-                    <input type="text" id="apellido" name="apellido" placeholder="ingresa tu apellido" required>
-                    <label for="masculino">masculino:</label>
-                    <input type="radio" id="masculino" name="sexo">
-                    <label for="femenino">femenino:</label>
-                    <input type="radio" id="femenino" name="sexo">
-                    <label for="suscribite">acepto terminos y condiciones</label>
-                    <input type="checkbox" name="suscribite">
-                    <label for="curso">Quiero hacer</label>
-                    <select name="curso" id="curso">
-                        <option value="">Curso</option>
-                        <option value="">Un salto</option>
-                    </select>
-                    <label for="texto">Ingresa tu mail o tu numero de telefono</label>
-                    <textarea name="texto" id="texto" rows="5" cols="60"></textarea>
-                    <input type="submit" value="enviar informacion">
-                    <input type="reset">
+                    
+                    <legend>contactanos llenando los campos</legend>
+                    <div class="contenedor-campos">
+                        
+                        <div class="campo">
+                            <label for="">Nombre</label>
+                            <input class="input-text" type="text" placeholder="Tu Nombre">
+                        </div>
+                        <div class="campo">
+                            <label for="">Telefono</label> 
+                            <input class="input-text" type="tel" placeholder="Tu Telefono">
+                        </div>
+                        <div class="campo">
+                            <label for="">Correo</label>
+                            <input class="input-text" type="text"placeholder="Tu Email">
+                        </div>
+                        <div class="campo">
+                            <label for="">Mensaje</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+                    </div>
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Enviar">
+                    </div>
                 </fieldset>
             </form>
         </section>

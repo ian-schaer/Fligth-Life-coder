@@ -98,6 +98,40 @@ button a {
   color: black;
 }
 
+.container-products {
+  display: flex;
+  width: 100%;
+  height: 40rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  background-image: url("../assets/img/portada3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-card {
+  width: 21.875rem;
+  height: 25rem;
+  border-radius: 0.3125rem;
+  text-align: center;
+  box-shadow: 5px 5px 10px black;
+  position: relative;
+  font-size: 1.5625rem;
+}
+.container-card .producto-img {
+  width: 100%;
+  height: 70%;
+}
+.container-card .producto-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .card1 {
   background-color: lightblue;
   order: 1;
@@ -110,11 +144,6 @@ button a {
 
 section {
   position: relative;
-}
-
-.curso-formulario {
-  width: 70%;
-  height: 12.5rem;
 }
 
 .curso {
@@ -144,6 +173,29 @@ section {
 }
 .elegir-mod ul li {
   list-style: none;
+}
+
+.formulario {
+  font-family: "Krub", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: gray;
+  width: min(60rem, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 6.25rem;
+}
+.formulario fieldset {
+  border: none;
+}
+.formulario legend {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: yellow;
 }
 
 .formulario {
@@ -230,7 +282,7 @@ section {
 footer {
   display: grid;
   width: 100%;
-  height: 21vh;
+  height: auto;
   background-color: rgb(146, 207, 223);
 }
 footer ul {
@@ -268,29 +320,10 @@ footer ul {
   grid-row: 2/3;
 }
 
-.container-card {
-  width: 21.875rem;
-  height: 25rem;
-  border-radius: 0.3125rem;
-  text-align: center;
-  box-shadow: 5px 5px 10px black;
-  position: relative;
-  font-size: 1.5625rem;
-}
-.container-card .producto-img {
-  width: 100%;
-  height: 70%;
-}
-.container-card .producto-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
 .container-pag1 {
   display: flex;
   width: 100%;
-  height: 43.75rem;
+  height: auto;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -316,28 +349,13 @@ footer ul {
   font-size: 30px;
 }
 
-.container-products {
-  display: flex;
-  width: 100%;
-  height: 43.75rem;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1.25rem;
-  background-image: url("../assets/img/portada3.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .text-mapa {
   margin: 1.875rem;
   display: flex;
   flex-direction: column;
   font-size: 1.25rem;
   width: 21.875rem;
-  height: 160px;
+  height: auto;
   border-radius: 0.3125rem;
   text-align: center;
   box-shadow: 5px 5px 10px black;
@@ -347,9 +365,20 @@ footer ul {
 .mapa {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  width: 75vw;
+  max-width: 400px;
+  min-width: 280px;
+  margin: auto;
+}
+.container img {
+  width: 100%;
+  box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
 }
 
 @media (max-width: 1465px) {
@@ -369,7 +398,6 @@ footer ul {
 }
 @media (max-width: 1200px) {
   .container-pag1 {
-    height: auto;
     justify-content: center;
     align-items: center;
   }
@@ -390,7 +418,7 @@ footer ul {
   .text-mapa {
     width: 80%;
     font-size: 1.2rem;
-    height: auto;
+    height: 100%;
   }
 }
 @media (max-width: 850px) {
@@ -440,7 +468,7 @@ footer ul {
     font-size: 1.5rem;
   }
   .text-mapa {
-    height: auto;
+    width: auto;
     font-size: 1rem;
   }
   .mapa {
@@ -453,6 +481,9 @@ footer ul {
   }
   .mapa-center {
     padding-left: 4.375rem;
+  }
+  .container {
+    margin-bottom: 100px;
   }
 }
 @media (max-width: 600px) {
@@ -479,6 +510,9 @@ footer ul {
   }
   .section-principal h2 {
     font-size: 1.5625rem;
+  }
+  .container-products {
+    height: auto;
   }
   .pag1-h1 h1 {
     font-size: 1.25rem;
